@@ -3,17 +3,17 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Quicksand', sans-serif;
-    font-family: 'Roboto', sans-serif;
+    background-color: #fafafa;
+    color: #212121;
+    font-family: 'Roboto', 'Quicksand', sans-serif;
+}
+
+.toolbar-box {
+
 }
 
 .toolbar-spacer {
     flex: 1 1 auto;
-  }
-
-.toolbar-icon {
-    max-width: 40px;
-    max-height: 40px;
 }
 
 .toolbar-icon img {
@@ -22,15 +22,19 @@ body {
 }
 
 .toolbar-brand {
-    padding: 0 10px;
-    font-family: 'Quicksand', sans-serif;
-
+    margin: 0 10px;
+    font-family: 'Quicksand', sans-serif !important;
 }
 
-@media screen and (max-width: 600px) {
-    .toolbar-icon {
-        max-width: 38px;
-        max-height: 38px;
-    }
+.page-header {
+}
 
+.header-card-home {
+    background: #f5f5f5 !important;
+    text-align: center;
+}
+
+.header-search-input {
+    width: 100% !important;
+    max-width: 600px;
 }
