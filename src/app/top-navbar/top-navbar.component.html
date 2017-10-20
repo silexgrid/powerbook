@@ -1,0 +1,24 @@
+
+  <!-- Page Header -->
+<header>
+    
+        <!-- Toolbar -->
+      <mat-toolbar color="primary">
+        <div fxLayout="row" fxLayoutAlign="none center" class="container">
+          <button mat-icon-button><img src="assets/flat-192x192.svg" alt="Power Book"/></button>
+          <span class="toolbar-brand" fxFlex="auto">Power Book</span>
+          <button mat-icon-button [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
+        </div>
+      </mat-toolbar>
+
+    
+        <!-- Button Menu -->
+        <mat-menu #menu="matMenu">
+            <div fxShow fxHide.xs>
+            <button mat-menu-item  routerLink="/"><mat-icon>explore</mat-icon>Explora</button>
+            <button mat-menu-item  routerLink="/create"><mat-icon>create</mat-icon>Crea</button>
+            <button mat-menu-item  routerLink="/share"><mat-icon>share</mat-icon>Comparte</button>
+            </div>
+        </mat-menu>
+    
+</header>

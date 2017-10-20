@@ -1,34 +1,12 @@
 <section class="mat-typography">
+<top-navbar></top-navbar>
+<bottom-navbar></bottom-navbar>
 
-  <!-- Page Header -->
-  <div class="page-header">
-
-    <!-- Toolbar -->
-    <mat-toolbar color="primary" class="toolbar-box">
-      <button mat-icon-button class="toolbar-icon"><img src="assets/flat-192x192.svg" alt="Power Book"/></button>
-      <span class="toolbar-brand">Power Book</span>
-      <span class="toolbar-spacer"></span>
-      <button mat-icon-button [matMenuTriggerFor]="menu">
-          <mat-icon>menu</mat-icon>
-      </button>   
-    </mat-toolbar>
-
-    <!-- Button Menu -->
-    <mat-menu #menu="matMenu">
-        <button mat-menu-item>Item 1</button>
-        <button mat-menu-item>Item 2</button>
-    </mat-menu>
-
-    <!-- Header Card -->
-    <mat-card class="header-card-home">
-        <form>
-            <mat-form-field class="header-search-input" color="accent">
-              <input type="search" matInput placeholder="Descubrir nuevos recursos...">
-              <mat-icon matSuffix>search</mat-icon>
-            </mat-form-field>
-        </form>
-    </mat-card>
+  <div class="page-content">
+      <router-outlet></router-outlet>
   </div>
+
+  
   
 </section>
 <!--The content below is only a placeholder and can be replaced.-->
